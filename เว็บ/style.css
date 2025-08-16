@@ -1,0 +1,58 @@
+body {
+    font-family: 'Prompt', sans-serif;
+    background: #ebc4c4;
+    margin: 0;
+    padding: 0;
+}
+.title {
+    text-align: center;
+    color: #020000;
+    padding: 20px;
+}
+.store-list, .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.store-card, .menu-card {
+    background: #f28484e9;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    cursor: pointer;
+    text-align: center;
+}
+.store-card img, .menu-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.menu-card input {
+    width: 50px;
+    margin: 10px;
+}
+button, .btn-cart, .btn-confirm {
+    background: #e8aea9;
+    color: rgb(12, 4, 2);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover, .btn-cart:hover, .btn-confirm:hover {
+    background: #e65b50;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+input, textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}

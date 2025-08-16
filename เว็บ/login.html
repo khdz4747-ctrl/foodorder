@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>เข้าสู่ระบบร้านค้า</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="title">เข้าสู่ระบบร้านค้า</h1>
+<form id="loginForm">
+    <input type="text" id="username" placeholder="ชื่อผู้ใช้" required>
+    <input type="password" id="password" placeholder="รหัสผ่าน" required>
+    <button type="submit" class="btn-confirm">เข้าสู่ระบบ</button>
+</form>
+<script src="script.js"></script>
+<script>
+document.getElementById("loginForm").addEventListener("submit", loginStore);
+</script>
+</body>
+</html>

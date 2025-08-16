@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ตะกร้าสินค้า</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="title">ยืนยันคำสั่งซื้อ</h1>
+<div id="cartItems"></div>
+<form id="orderForm">
+    <input type="text" id="customerName" placeholder="ชื่อผู้สั่ง" required>
+    <input type="text" id="customerPhone" placeholder="เบอร์โทร" required>
+    <textarea id="customerAddress" placeholder="ที่อยู่" required></textarea>
+    <textarea id="customerNote" placeholder="ข้อความเพิ่มเติม เช่น ไม่เผ็ด"></textarea>
+    <button type="submit" class="btn-confirm">สั่งซื้อ</button>
+</form>
+<script src="script.js"></script>
+<script>
+loadCart();
+document.getElementById("orderForm").addEventListener("submit", submitOrder);
+</script>
+</body>
+</html>
